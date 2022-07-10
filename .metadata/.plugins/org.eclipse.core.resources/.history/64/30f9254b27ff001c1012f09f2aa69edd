@@ -1,0 +1,14 @@
+package practice;
+
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+		Member m = new Member();
+		
+		System.out.println(m.name);
+		System.out.println(m.age);
+		System.out.println(m.hobby);
+		System.out.println(m.gender);
+	}
+}

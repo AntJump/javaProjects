@@ -1,0 +1,38 @@
+package practice;
+
+import java.util.Date;
+
+public class Member {
+	String id;
+	String pwd;
+	String name;
+	Date date;
+	
+	public Member() {
+		this.id = "id";
+		this.pwd = "pwd";
+		this.name = "name";
+	}
+	
+//	public Member(Member otherMember) {
+//		this.id = otherMember.id;
+//		this.pwd = otherMember.pwd;
+//		this.name = otherMember.name;
+//		this.date = otherMember.date;
+//	}
+	
+	public Member(Member otherMember) {
+		this(otherMember.id, otherMember.pwd, otherMember.name, otherMember.date);
+	}
+	
+	public Member(String id, String pwd, String name) {
+		this.id = id;
+		this.pwd = pwd;
+		this.name = name;
+	}
+	
+	public Member(String id, String pwd, String name, Date date) {
+		this("id", "pwd", "name");	//다른 생성자 호출시 가장 첫 줄에 호출해야 함 
+		this.date = date;
+	}
+}

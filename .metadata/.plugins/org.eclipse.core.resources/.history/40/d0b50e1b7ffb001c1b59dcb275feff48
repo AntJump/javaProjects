@@ -1,0 +1,23 @@
+package practice;
+
+import java.util.Scanner;
+
+public class Application {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		Dog[] dogs = new Dog[5];
+		
+		for(int i=0;i<5;i++) {
+			System.out.printf("강아지%d의 이름을 넣어주세요", i+1);
+			dogs[i].setName(sc.nextLine());
+			dogs[i].setAge(sc.nextInt());
+		}
+		
+		for(Dog doggy : dogs) {
+			System.out.print(doggy.name + "가 짖습니다..");
+			doggy.bark(doggy.age);
+		}
+		
+		
+	}
+}

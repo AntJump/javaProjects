@@ -1,0 +1,15 @@
+package practice;
+
+public class Test {
+	public static void staticPrint() {
+		print1();
+	}
+	void print1() {
+		System.out.println("print1");
+		print2();
+	}
+	
+	void print2() {
+		System.out.println("print2");
+	}
+}

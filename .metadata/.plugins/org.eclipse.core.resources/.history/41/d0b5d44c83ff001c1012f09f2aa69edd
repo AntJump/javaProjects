@@ -1,0 +1,10 @@
+package practice;
+
+import practice.Member.toString2;
+
+public class Main {
+	public static void main(String[] args) {
+		Member m = new Member();
+		System.out.println(m.toString2());
+	}
+}

@@ -1,0 +1,16 @@
+package practice;
+
+public class Car {
+	boolean isOn;
+
+	public void startUp() {
+		if(isOn) {
+			System.out.println("이미 시동이 걸려있습니다.");
+		} else {
+			System.out.println("시동을 걸었습니다.");
+			this.isOn = true;
+		}
+		
+	}
+
+}

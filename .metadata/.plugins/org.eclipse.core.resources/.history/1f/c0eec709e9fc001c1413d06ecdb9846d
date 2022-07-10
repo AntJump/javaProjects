@@ -1,0 +1,12 @@
+package practice;
+
+public class Test {
+	void print1() {
+		System.out.println("print1");
+		print2();
+	}
+	
+	void print2() {
+		System.out.println("print2");
+	}
+}

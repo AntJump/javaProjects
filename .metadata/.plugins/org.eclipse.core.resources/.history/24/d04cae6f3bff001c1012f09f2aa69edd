@@ -1,0 +1,8 @@
+package practice;
+
+public class Member {
+	String name;
+	int age;
+	char gender;
+	String[] hobby;
+}

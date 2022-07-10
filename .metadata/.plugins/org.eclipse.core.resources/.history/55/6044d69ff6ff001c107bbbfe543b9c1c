@@ -1,0 +1,20 @@
+package practice;
+
+import static practice.Member.toString2;
+
+public class Main {
+	public static void main(String[] args) {
+		
+		EagerSingleton eager1 = EagerSingleton.getInstance();
+		EagerSingleton eager2 = EagerSingleton.getInstance();
+		
+		System.out.println("eager1 hashcode = " + eager1.hashCode());
+		System.out.println("eager2 hashcode = " + eager2.hashCode());
+		
+		LazySingleton lazy1 = LazySingleton.getInstance();
+		LazySingleton lazy1 = LazySingleton.getInstance();
+		
+		System.out.println("lazy1 hashcode = " + lazy1.hashCode());
+		System.out.println("lazy2 hashcode = " + lazy2.hashCode());
+	}
+}

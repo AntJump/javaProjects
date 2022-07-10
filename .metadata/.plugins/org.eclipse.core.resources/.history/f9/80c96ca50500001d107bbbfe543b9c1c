@@ -1,0 +1,22 @@
+package practice;
+
+import static practice.Member.toString2;
+
+public class Main {
+	
+	private int globalNum;
+	private static int staticNum;
+	
+	
+	public void printAll() {
+		int num;
+		System.out.println(globalNum);
+		System.out.println(staticNum);
+	}
+	
+	public static void main(String[] args) {
+		
+		new Main().printAll();
+		
+	}
+}

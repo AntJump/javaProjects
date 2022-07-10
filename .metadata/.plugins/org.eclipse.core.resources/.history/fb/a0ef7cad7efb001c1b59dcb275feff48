@@ -1,0 +1,20 @@
+package practice;
+
+import java.util.Scanner;
+
+public class Application {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		Dog[] dogs = new Dog[5];
+		
+		for(int i=0;i<5;i++) {
+			System.out.printf("강아지%d의 이름을 넣어주세요", i);
+			dogs[i].setName(sc.next());
+		}
+		
+		for(Dog dog : dogs) {
+			dogs.bark(dog);
+		}
+		
+	}
+}

@@ -1,0 +1,10 @@
+package practice;
+
+import static practice.Member.toString2;
+
+public class Main {
+	public static void main(String[] args) {
+		Member m = new Member("1", "2", "3", "4");
+		System.out.println(m.getHI());
+	}
+}

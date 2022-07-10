@@ -1,0 +1,27 @@
+package practice;
+
+import java.util.Date;
+
+public class Member {
+	String id;
+	String pwd;
+	String name;
+	Date date;
+	
+	public Member() {
+		this.id = "id";
+		this.pwd = "pwd";
+		this.name = "name";
+	}
+	
+	public Member(String id, String pwd, String name) {
+		this.id = id;
+		this.pwd = pwd;
+		this.name = name;
+	}
+	
+	public Member(String id, String pwd, String name, Date date) {
+		this("id", "pwd", "name");
+		this.date = date;
+	}
+}

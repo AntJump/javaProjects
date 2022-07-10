@@ -1,0 +1,18 @@
+package practice;
+
+public class CarRacer {
+	private Car car = new Car();
+
+	public void startUp() {
+		car.startUp();
+	}
+
+	public void stepAccelator() {
+		car.go();
+	}
+
+	public void stepBreak() {
+		car.stop();
+	}
+	
+}

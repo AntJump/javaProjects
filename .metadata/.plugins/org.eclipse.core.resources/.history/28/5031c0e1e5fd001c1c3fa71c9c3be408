@@ -1,0 +1,33 @@
+package practice;
+
+import java.util.Scanner;
+
+public class Main{
+
+     public static void main(String []args){
+        
+        Scanner scan = new Scanner(System.in);
+        
+				
+        System.out.print("input: ");
+        int num1 = scan.nextInt();
+        int num2 = scan.nextInt();
+        
+		Main app = new Main();
+        
+        scan.nextLine();
+        
+        System.out.print("print? yes or no: ");
+        String p = scan.nextLine();
+        
+        // "yes"로 입력 받았다고 가정
+        System.out.println(app.sumTwoNumber(num1, num2));
+        
+     }
+     
+     int sumTwoNumber(int _num1, int _num2){
+         return _num1 + _num2;
+     }
+     
+     
+}

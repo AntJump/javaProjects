@@ -1,0 +1,76 @@
+package practice;
+
+import java.util.Date;
+
+public class Member {
+	String id;
+	String pwd;
+	String name;
+	Date date;
+
+	public Member() {
+		this.id = "name";
+		this.pwd = "pwd";
+		this.name = "name";
+	}
+
+
+	public Member(Member otherMember) {
+		this(otherMember.id, otherMember.pwd, otherMember.name, otherMember.date);
+	}
+
+	public Member(String id, String pwd, String name) {
+		this.id = id;
+		this.pwd = pwd;
+		this.name = name;
+	}
+
+	public Member(String id, String pwd, String name, Date date) {
+		this("id", "pwd", "name"); // 다른 생성자 호출시 가장 첫 줄에 호출해야 함
+		this.date = date;
+	}
+
+	public String getId() {
+		return id;
+	}
+
+	public void setId(String id) {
+		this.id = id;
+	}
+
+	public String getPwd() {
+		return pwd;
+	}
+
+	public void setPwd(String pwd) {
+		this.pwd = pwd;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public Date getDate() {
+		return date;
+	}
+
+	public void setDate(Date date) {
+		this.date = date;
+	}
+
+	@Override
+	public String toString() {
+		return "Member [id=" + id + ", pwd=" + pwd + ", name=" + name + ", date=" + date + "]";
+	}
+	
+	public void printAll(String...hobby) {
+		for(int i=0;i<hobby.length;i++) {
+			System.out.println(hobby[i]);
+		}
+	}
+
+}

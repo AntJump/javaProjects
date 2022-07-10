@@ -1,0 +1,14 @@
+package practice;
+
+public class Main {
+	public static void main(String[] args) {
+		
+		Car[] car = new Car[] {new Car("페라리", 250), 
+				new Car("아우디", 200), new Car("덤프트럭", 100), 
+				new Car("포터", 300), new Car("롤스로이스", 300)};
+		
+		for(int i = 0; i < car.length; i++) {
+			System.out.println(car[i].toString());
+		}
+	}
+}

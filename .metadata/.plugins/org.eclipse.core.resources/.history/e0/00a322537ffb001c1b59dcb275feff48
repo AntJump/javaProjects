@@ -1,0 +1,21 @@
+package practice;
+
+import java.util.Scanner;
+
+public class Application {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		Dog[] dogs = new Dog[5];
+		
+		dogs[0] = new Dog("홍길똥", 3);
+		dogs[1] = new Dog("요삐", 2);
+		dogs[2] = new Dog("야삐", 4);
+		dogs[3] = new Dog("유삐", 1);
+		dogs[4] = new Dog("삐삐", 5);
+		
+		for(Dog doggy : dogs) {
+			System.out.print(doggy.name + "가 짖습니다..");
+			doggy.bark(doggy.age);
+		}
+	}
+}
